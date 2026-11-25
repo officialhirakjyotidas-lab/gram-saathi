@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081426">
+  <meta name="description" content="Our website is currently under maintenance. We’ll be back soon.">
+  <title>Under Maintenance | Gram Saathi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer>
+// Small enhancements for the maintenance page.
+document.addEventListener("DOMContentLoaded", () => {
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  // Keep the decorative progress animation accessible to assistive technology.
+  const progress = document.querySelector(".progress-track");
+  if (progress) {
+    progress.setAttribute("aria-valuetext", "Maintenance is in progress");
+  }
+});
+  </script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grid-overlay"></div>
+
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Gram Saathi home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="brand-name">GRAM <b>SAATHI</b></span>
+      </a>
+      <div class="status-pill"><span class="status-dot"></span> SYSTEM UPDATE IN PROGRESS</div>
+    </header>
+
+    <section class="hero" aria-labelledby="main-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A LITTLE PATIENCE, A BETTER EXPERIENCE</div>
+        <h1 id="main-title">We’re making<br><span>things better.</span></h1>
+        <p class="intro">Our website is currently under maintenance while we work on improvements. We’re tuning things up to bring you a smoother, better experience.</p>
+
+        <div class="progress-card">
+          <div class="progress-heading">
+            <span><i class="tiny-spark"></i> MAINTENANCE MODE</span>
+            <span class="live-label"><span></span> IN PROGRESS</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-label="Maintenance in progress" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill"></div>
+            <div class="progress-glow"></div>
+          </div>
+          <div class="progress-foot"><span>Working behind the scenes</span><span class="loading-dots">PLEASE WAIT<span>.</span><span>.</span><span>.</span></span></div>
+        </div>
+
+        <div class="note-row">
+          <span class="note-icon">✦</span>
+          <p>Thank you for your patience and continued support.</p>
+        </div>
+      </div>
+
+      <div class="visual" aria-label="Animated maintenance illustration">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="orbit-dot dot-a"></div>
+        <div class="orbit-dot dot-b"></div>
+        <div class="orbit-dot dot-c"></div>
+
+        <div class="scene-glow"></div>
+        <div class="platform platform-back"></div>
+        <div class="platform platform-front"></div>
+
+        <div class="main-gear">
+          <div class="gear-teeth"></div>
+          <div class="gear-inner"><div class="gear-core"><span>GS</span></div></div>
+        </div>
+        <div class="small-gear">
+          <div class="small-gear-inner"><span></span></div>
+        </div>
+
+        <div class="tool tool-wrench"><span>⚒</span></div>
+        <div class="tool tool-bolt">✦</div>
+        <div class="floating-card card-top"><span class="card-icon">✧</span><span>UPDATING</span><i></i><i></i><i></i></div>
+        <div class="floating-card card-bottom"><span class="check-ring">✓</span><span>IMPROVING YOUR EXPERIENCE</span></div>
+        <div class="floor-line"></div>
+        <div class="spark spark-1">✦</div><div class="spark spark-2">✧</div><div class="spark spark-3">✦</div>
+      </div>
+    </section>
+
+    <section class="info-strip">
+      <div class="info-item"><span class="info-symbol">⌁</span><div><b>Making improvements</b><small>Building a better experience</small></div></div>
+      <div class="strip-divider"></div>
+      <div class="info-item"><span class="info-symbol">◈</span><div><b>Back soon</b><small>Thanks for waiting with us</small></div></div>
+      <div class="strip-divider"></div>
+      <div class="info-item"><span class="info-symbol">✦</span><div><b>Made for the community</b><small>One step better, every day</small></div></div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Gram Saathi</span>
+      <span class="footer-credit">Developed and Maintained by <b>Noob Coders</b></span>
+      <span class="footer-right">BUILT WITH <span>♥</span> &amp; CARE</span>
+    </footer>
+  </main>
+</body>
+</html>
