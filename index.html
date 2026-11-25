@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================================
+         1. DOCUMENT METADATA
+    ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#176b45">
+
+    <meta name="description"
+        content="Village & Panchayat Innovation — a community-focused platform for Alipurduar, West Bengal.">
+
+    <title>Gram Saathi | Alipurduar</title>
+
+    <!-- =========================================
+         2. EXTERNAL FONTS
+    ========================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- =========================================
+         3. EXTERNAL STYLESHEET
+    ========================================== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- =========================================
+         4. SUPABASE JAVASCRIPT LIBRARY
+    ========================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         5. HEADER & NAVIGATION
+    ========================================== -->
+    <header class="header">
+        <div class="container nav">
+
+            <!-- Brand Logo -->
+            <a class="brand" href="#home">
+                <span class="brand-mark">G</span>
+
+                <span class="brand-copy">
+                    <b>Gram Saathi</b>
+                    <small>Panchayat &amp; Rural Development- Alipurduar</small>
+                </span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                ☰
+            </button>
+
+            <!-- Navigation Links -->
+            <nav id="mainNav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">What we do</a>
+                <a href="#process">How it works</a>
+                <a href="#our-aim">Our Aim</a>
+                <a href="#gallery">Gallery</a>
+
+                <button class="btn outline" data-open-auth>
+                    Login / Sign
+                </button>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =========================================
+         6. MAIN WEBSITE CONTENT
+    ========================================== -->
+    <main>
+
+        <!-- =====================================
+             6.1 HERO SECTION
+        ====================================== -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <!-- Hero Content -->
+                <div>
+                    <span class="eyebrow">
+                        ● &nbsp; DEVELOPMENT STARTS WITH OUR VILLAGES
+                    </span>
+
+                    <h1>
+                        Better Villages <br>
+                        <em>A brighter future </em>
+                    </h1>
+
+                    <p class="lead">
+                        A digital platform where villagers can share their problems, connect with Gram Panchayats and work together with local authorities to improve their villages.
+                    </p>
+
+                    <div class="actions">
+                        <button class="btn primary" data-open-auth>
+                            Get started <span>→</span>
+                        </button>
+
+                        <a class="btn light" href="#about">
+                            Explore Gram Saathi
+                        </a>
+                    </div>
+
+                    <p class="note">
+                        ✦ An independent community innovation concept for Alipurduar, West Bengal.
+                    </p>
+                </div>
+
+                <!-- Village Photo -->
+                <div class="village-art">
+                    <img
+                        src="assets/images/village.jpg"
+                        alt="Beautiful village landscape of Alipurduar, West Bengal"
+                        class="village-photo"
+                    >
+
+            
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             6.2 TRUST / PLATFORM VALUES SECTION
+        ====================================== -->
+        <div class="trust">
+            <div class="container trust-grid">
+
+                <div>
+                    <b>People-first</b>
+                    <small>Designed around residents</small>
+                </div>
+
+                <div>
+                    <b>Locally connected</b>
+                    <small>Village to district</small>
+                </div>
+
+                <div>
+                    <b>Transparent</b>
+                    <small>Clearer communication</small>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- =====================================
+             6.3 ABOUT VPI SECTION
+        ====================================== -->
+        <section class="section" id="about">
+            <div class="container split">
+
+                <!-- About Illustration -->
+                <div class="visual">
+                    <div class="visual-main">
+                        <span>⌂</span>
+                        <b>Our villages,<br>our shared future.</b>
+                        <small>Listen · Connect · Improve</small>
+                    </div>
+
+                    <div class="visual-tag">
+                        🌱 &nbsp;
+                        <span>
+                            <b>Local solutions</b>
+                            <small>Rooted in community needs</small>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div>
+                    <span class="eyebrow">ABOUT THE INITIATIVE</span>
+
+                    <h2>
+                        Bringing local development <em>closer to people.</em>
+                    </h2>
+
+                    <p>
+                        Village &amp; Panchayat Innovation (VPI) is an independent project concept
+                        focused on making it easier for people to engage with local development priorities.
+                    </p>
+
+                    <p>
+                        The idea is simple: help residents share concerns and ideas, make local
+                        information easier to access, and support better coordination between
+                        communities and public institutions.
+                    </p>
+
+                    <a class="text-link" href="#services">
+                        Discover the approach →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             6.4 SERVICES / FEATURES SECTION
+        ====================================== -->
+        <section class="section soft" id="services">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-head">
+                    <span class="eyebrow">WHAT VPI AIMS TO SUPPORT</span>
+
+                    <h2>
+                        One platform. <em>Many possibilities.</em>
+                    </h2>
+
+                    <p>
+                        A shared digital space for community participation and more connected local action.
+                    </p>
+                </div>
+
+                <!-- Feature Cards -->
+                <div class="cards">
+
+                    <article>
+                        <span class="ico green">✎</span>
+                        <h3>Share local concerns</h3>
+                        <p>
+                            Give residents a straightforward way to communicate local issues,
+                            needs and ideas.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="ico yellow">⌖</span>
+                        <h3>Connect by location</h3>
+                        <p>
+                            Organise participation around district, block, Gram Panchayat and village.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="ico blue">⇄</span>
+                        <h3>Support coordination</h3>
+                        <p>
+                            Encourage better communication between residents and relevant local stakeholders.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span class="ico purple">▤</span>
+                        <h3>Access information</h3>
+                        <p>
+                            Create a foundation for clearer access to community updates
+                            and development information.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             6.5 HOW IT WORKS SECTION
+        ====================================== -->
+        <section class="section" id="process">
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-head">
+                    <span class="eyebrow">A SIMPLE STARTING POINT</span>
+
+                    <h2>
+                        How participation <em>can work.</em>
+                    </h2>
+
+                    <p>
+                        VPI is designed around a clear, location-based journey.
+                    </p>
+                </div>
+
+                <!-- Process Steps -->
+                <div class="steps">
+
+                    <article>
+                        <b>01</b>
+                        <span>♙</span>
+                        <h3>Create an account</h3>
+                        <p>
+                            Register with your contact details and select your local area.
+                        </p>
+                    </article>
+
+                    <article>
+                        <b>02</b>
+                        <span>⌖</span>
+                        <h3>Connect to your area</h3>
+                        <p>
+                            Your district, block, Panchayat and village help organise local participation.
+                        </p>
+                    </article>
+
+                    <article>
+                        <b>03</b>
+                        <span>✦</span>
+                        <h3>Take part</h3>
+                        <p>
+                            Use the platform as features become available and your account
+                            is verified where required.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- =====================================
+             6.6 DOOARS KANYA FEATURE
+        ====================================== -->
+        <section class="section feature-section" id="dooars-kanya">
+            <div class="container feature-grid">
+                <div class="feature-photo-wrap">
+                    <img id="dooarsKanyaImage" class="feature-photo"
+                        src="https://placehold.co/900x620/e8f1eb/176b45?text=Dooars+Kanya"
+                        alt="Dooars Kanya, Alipurduar railway station">
+                    <span class="photo-caption">Alipurduar, West Bengal</span>
+                </div>
+                <div class="feature-copy">
+                    <span class="eyebrow">A LANDMARK OF ALIPURDUAR</span>
+                    <h2>Dooars Kanya</h2>
+                    <p>Dooars Kanya is a familiar landmark in Alipurduar. This feature celebrates the district and its
+                        local identity through community-contributed photographs.</p>
+                    <p class="muted-copy">Images shown here can be updated by an authorised VPI administrator.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================
+             6.7 CHIEF MINISTER FEATURE
+        ====================================== -->
+        <section class="section cm-section" id="chief-minister">
+            <div class="container feature-grid reverse">
+                <div class="feature-copy">
+                    <span class="eyebrow">WEST BENGAL</span>
+                    <h2>Shri Suvendu Adhikari</h2>
+                    <p class="cm-role">Hon’ble Chief Minister of West Bengal</p>
+                    <p>This informational profile recognises the current Chief Minister of West Bengal. VPI is an
+                        independent community innovation concept and is not affiliated with or endorsed by any
+                        government office.</p>
+                    <a class="text-link" href="https://wb.gov.in/government-meet-the-chief-minister.aspx"
+                        target="_blank" rel="noopener noreferrer">Official West Bengal profile ↗</a>
+                </div>
+                <div class="feature-photo-wrap">
+                    <img id="chiefMinisterImage" class="feature-photo"
+                        src="https://placehold.co/900x620/e8f1eb/176b45?text=Chief+Minister"
+                        alt="Portrait of Shri Suvendu Adhikari, Chief Minister of West Bengal">
+                    <span class="photo-caption">Official profile image can be managed by VPI admin</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================
+             6.8 OUR AIM
+        ====================================== -->
+        <section class="section aim-section" id="our-aim">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">OUR AIM</span>
+                    <h2>Local voices. <em>Shared progress.</em></h2>
+                    <p>VPI aims to explore how digital tools and community participation can support better local
+                        coordination and more accessible information.</p>
+                </div>
+                <div class="aim-grid">
+                    <article class="aim-card"><span>◎</span>
+                        <h3>Our mission</h3>
+                        <p>Make community participation easier by creating a clear, accessible digital starting point
+                            for local information and coordination.</p>
+                    </article>
+                    <article class="aim-card"><span>⌖</span>
+                        <h3>Our vision</h3>
+                        <p>Encourage informed, connected communities where residents can contribute ideas and stay aware
+                            of local priorities.</p>
+                    </article>
+                    <article class="aim-card"><span>✦</span>
+                        <h3>Our values</h3>
+                        <p>Transparency, accessibility, responsible technology, respect and community-led thinking.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================
+             6.9 COMMUNITY GALLERY
+        ====================================== -->
+        <section class="section gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">COMMUNITY MOMENTS</span>
+                    <h2>Gallery</h2>
+                    <p>Photographs shared to highlight places, people and community initiatives across the region.</p>
+                </div>
+                <div class="media-gallery" id="publicGallery">
+                    <div class="gallery-empty">Gallery photos will appear here when added by the VPI administrator.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================
+             6.10 CALL TO ACTION SECTION
+        ====================================== -->
+        <section class="cta">
+            <div class="container cta-inner">
+
+                <div>
+                    <span class="eyebrow">BE PART OF THE CONVERSATION</span>
+
+                    <h2>
+                        Local progress begins<br>with local voices.
+                    </h2>
+
+                    <p>
+                        Create your VPI account and get connected to your community.
+                    </p>
+                </div>
+
+                <button class="btn white" data-open-auth>
+                    Join the initiative →
+                </button>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         7. WEBSITE FOOTER
+    ========================================== -->
+    <footer>
+
+        <!-- Footer Main Content -->
+        <div class="container footer-main">
+
+            <a class="brand footer-brand" href="#home">
+                <span class="brand-mark">V</span>
+
+                <span class="brand-copy">
+                    <b>VPI</b>
+                    <small>Village &amp; Panchayat Innovation</small>
+                </span>
+            </a>
+
+            <p>
+                An independent community innovation concept for Alipurduar District, West Bengal.
+            </p>
+
+            <!-- Footer Navigation -->
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">What we do</a>
+                <a href="#process">How it works</a>
+                <a href="#" id="meetTeamLink">Meet Our Team</a>
+                <button data-open-auth>Account</button>
+            </div>
+
+        </div>
+
+        <!-- Footer Copyright -->
+        <div class="container footer-bottom">
+            <span>© <span id="year"></span> VPI. Concept project.</span>
+            <span>Built around community participation.</span>
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- =========================================
+         7.1 SEPARATE MEET OUR TEAM VIEW
+    ========================================== -->
+    <section id="teamPage" class="team-page hidden" aria-labelledby="teamPageTitle">
+        <div class="team-page-top">
+            <div class="container team-page-nav">
+                <a class="brand" href="#" id="teamHomeBrand">
+                    <span class="brand-mark">V</span>
+                    <span class="brand-copy"><b>VPI</b><small>Village &amp; Panchayat Innovation</small></span>
+                </a>
+                <button class="btn outline" type="button" id="teamBackButton">← Back to Home</button>
+            </div>
+        </div>
+        <main class="team-page-main">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">THE PEOPLE BEHIND THE PROJECT</span>
+                    <h1 id="teamPageTitle">Meet Our Team</h1>
+                    <p>Website Developed and Maintained by <strong>Noob Coders</strong>.</p>
+                </div>
+                <div class="team-grid" id="teamMembers">
+                    <article class="team-card">
+                        <div class="team-photo-placeholder">HD</div>
+                        <h2>Hirakjyoti Das</h2>
+                        <p>Programmer &amp; Developer</p>
+                    </article>
+                    <article class="team-card">
+                        <div class="team-photo-placeholder">MP</div>
+                        <h2>Monalisa Parvin</h2>
+                        <p>Tester &amp; Deployment</p>
+                    </article>
+                </div>
+                <p class="team-credit">Website Developed and Maintained by <strong>Noob Coders</strong>.</p>
+            </div>
+        </main>
+    </section>
+
+    <!-- =========================================
+         8. ROLE-BASED DASHBOARD VIEW
+         Dashboard content and routing stay in this file.
+    ========================================== -->
+    <section id="dashboardView" class="dashboard-view hidden" aria-live="polite">
+        <header class="dashboard-header">
+            <a class="brand" href="#" aria-label="GramSathi dashboard">
+                <span class="brand-mark">G</span>
+                <span class="brand-copy">
+                    <b>GramSathi</b>
+                    <small>Village &amp; Panchayat Innovation</small>
+                </span>
+            </a>
+            <div class="dashboard-account">
+                <span id="dashboardUserName">Account</span>
+                <button class="btn outline" id="dashboardLogout" type="button">Sign out</button>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="dashboard-breadcrumb">
+                <span>GramSathi</span><span aria-hidden="true">/</span><span id="dashboardRoleLabel">Dashboard</span>
+            </div>
+
+            <section class="dashboard-welcome">
+                <div>
+                    <span class="eyebrow" id="dashboardEyebrow">YOUR WORKSPACE</span>
+                    <h1 id="dashboardTitle">Welcome to your dashboard</h1>
+                    <p id="dashboardDescription">Your account workspace is loading.</p>
+                </div>
+                <div class="dashboard-role-mark" aria-hidden="true">⌂</div>
+            </section>
+
+            <section class="dashboard-content-card" id="dashboardContentCard">
+                <div class="dashboard-status-icon" aria-hidden="true">✦</div>
+                <div class="dashboard-content-copy">
+                    <span class="dashboard-status-label">WORKSPACE</span>
+                    <h2 id="dashboardCardTitle">Your dashboard is being prepared</h2>
+                    <p id="dashboardCardDescription">We are working on this workspace. Please check back soon.</p>
+                </div>
+            </section>
+
+            <!-- Resident profile completion gate -->
+            <section id="residentProfileGate" class="resident-profile-gate hidden">
+                <div class="resident-section-heading">
+                    <span class="eyebrow">ONE-TIME PROFILE SETUP</span>
+                    <h2>Complete your resident profile</h2>
+                    <p>Submit your contact details, village location and one supporting document. Your dashboard will
+                        remain view-only until your identity is verified.</p>
+                </div>
+                <form id="residentProfileForm" class="form resident-profile-form">
+                    <div class="form-grid">
+                        <label class="wide">Full name<input id="profileFullName" maxlength="120" required
+                                autocomplete="name" placeholder="Enter your full name"></label>
+                        <label class="wide">Mobile number<input id="profileMobile" type="tel" inputmode="numeric"
+                                maxlength="15" required placeholder="10-digit mobile number"></label>
+                        <label>District<select id="districtSelect" required>
+                                <option value="">Loading districts…</option>
+                            </select></label>
+                        <label>Block<select id="blockSelect" required disabled>
+                                <option value="">Select district first</option>
+                            </select></label>
+                        <label>Gram Panchayat<select id="gpSelect" required disabled>
+                                <option value="">Select block first</option>
+                            </select></label>
+                        <label>Village<select id="villageSelect" required disabled>
+                                <option value="">Select Gram Panchayat first</option>
+                            </select></label>
+                        <label class="wide">Supporting document type<select id="residentDocumentType" required>
+                                <option value="">Select document</option>
+                                <option value="Aadhaar Card">Aadhaar Card</option>
+                                <option value="PAN Card">PAN Card</option>
+                                <option value="Voter ID">Voter ID</option>
+                                <option value="Ration Card">Ration Card</option>
+                                <option value="Bank Statement">Bank Statement</option>
+                                <option value="Electricity Bill">Electricity Bill</option>
+                            </select></label>
+                        <label class="wide">Upload document<input id="residentDocument" type="file"
+                                accept=".jpg,.jpeg,.png,.pdf,application/pdf,image/jpeg,image/png" required></label>
+                    </div>
+                    <p class="hint">Accepted formats: PDF, JPG or PNG. Upload only a document you are comfortable
+                        sharing for verification. You may mask unrelated account numbers and sensitive details where
+                        appropriate.</p>
+                    <button class="btn primary full" type="submit">Submit profile for verification</button>
+                    <div id="profileFormMessage" class="message" role="status" aria-live="polite"></div>
+                </form>
+            </section>
+
+            <!-- Resident dashboard: public information remains viewable while pending -->
+            <section id="residentDashboard" class="resident-dashboard hidden">
+                <div id="residentVerificationBanner" class="verification-banner pending">
+                    <div><strong id="residentVerificationTitle">Identity verification pending</strong>
+                        <p id="residentVerificationText">You can view public information. Complaints and requests unlock
+                            after verification.</p>
+                    </div>
+                    <span id="residentVerificationBadge" class="verification-pill">Pending</span>
+                </div>
+                <div class="resident-summary-grid">
+                    <article class="resident-summary-card"><span>YOUR VILLAGE</span><strong
+                            id="residentLocationSummary">Location not set</strong></article>
+                    <article class="resident-summary-card"><span>ACCOUNT STATUS</span><strong
+                            id="residentAccountSummary">Pending verification</strong></article>
+                </div>
+                <div class="resident-section-heading"><span class="eyebrow">YOUR COMMUNITY</span>
+                    <h2>Resident Services & Information</h2>
+                    <p>Explore local information and updates from your community.</p>
+                </div>
+                <div class="resident-feature-grid">
+                    <button class="resident-feature"
+                        data-resident-section="announcements"><span>📢</span><strong>Announcements</strong><small>Public
+                            notices and local updates</small></button>
+                    <button class="resident-feature" data-resident-section="schemes"><span>🏛️</span><strong>Government
+                            Schemes</strong><small>Scheme information and eligibility</small></button>
+                    <button class="resident-feature" data-resident-section="village"><span>🏡</span><strong>My
+                            Village</strong><small>Village profile and facilities</small></button>
+                    <button class="resident-feature" data-resident-section="panchayat"><span>🏢</span><strong>Gram
+                            Panchayat</strong><small>GP details and representatives</small></button>
+                    <button class="resident-feature"
+                        data-resident-section="development"><span>🛠️</span><strong>Development
+                            Works</strong><small>Public projects and progress</small></button>
+                    <button class="resident-feature"
+                        data-resident-section="complaints"><span>📝</span><strong>Complaints &
+                            Requests</strong><small>Raise a complaint or request a service</small><i
+                            class="feature-lock hidden" aria-label="Locked">🔒</i></button>
+                    <button class="resident-feature" data-resident-section="submissions"><span>📋</span><strong>My
+                            Submissions</strong><small>Track your complaints and requests</small><i
+                            class="feature-lock hidden" aria-label="Locked">🔒</i></button>
+                    <button class="resident-feature" data-resident-section="events"><span>📅</span><strong>Events &
+                            Meetings</strong><small>Gram Sabha and public meetings</small></button>
+                    <button class="resident-feature" data-resident-section="emergency"><span>☎️</span><strong>Emergency
+                            Contacts</strong><small>Important local contact information</small></button>
+                    <button class="resident-feature" data-resident-section="documents"><span>📄</span><strong>Important
+                            Documents</strong><small>Public forms and useful documents</small></button>
+                    <button class="resident-feature" data-resident-section="profile"><span>👤</span><strong>My
+                            Profile</strong><small>View your details and status</small></button>
+                </div>
+                <section id="residentSectionDetail" class="resident-detail hidden" aria-live="polite">
+                    <button type="button" id="residentDetailBack" class="btn outline">← Back to dashboard</button>
+                    <h2 id="residentDetailTitle">Section</h2>
+                    <p id="residentDetailText">Information will appear here.</p>
+                    <div id="residentDetailContent"></div>
+                </section>
+            </section>
+
+            <!-- Role-specific official dashboard -->
+            <section id="officialDashboard" class="official-dashboard hidden" aria-live="polite">
+                <div class="official-scope-card">
+                    <div><span class="eyebrow">ASSIGNED JURISDICTION</span>
+                        <h2 id="officialScopeTitle">Your administrative area</h2>
+                        <p id="officialScopeDescription">Loading your assigned area…</p>
+                    </div>
+                    <span class="official-scope-icon" aria-hidden="true">⌖</span>
+                </div>
+                                
+                <div class="official-metric-grid" id="officialMetricGrid">
+                    <article class="official-metric">
+                        <span>Loading</span>
+                        <strong>—</strong>
+                        <small>Fetching records</small>
+                    </article>
+                </div>
+
+                <!-- =========================================
+                    RESIDENT MANAGEMENT SYSTEM
+                ========================================== -->
+                <section id="residentManagement" class="resident-management">
+
+                    <div class="resident-management-heading">
+                        <div>
+                            <span class="eyebrow">RESIDENT VERIFICATION</span>
+                            <h2>Resident Management</h2>
+                            <p>Manage resident verification requests within your assigned jurisdiction.</p>
+                        </div>
+
+                        <button type="button" class="btn outline" id="refreshResidents">
+                            Refresh
+                        </button>
+                    </div>
+
+                    <div class="resident-management-filters">
+                        <input type="search" id="residentSearch"
+                            placeholder="Search by name, mobile or village...">
+
+                        <select id="residentStatusFilter">
+                            <option value="all">All residents</option>
+                            <option value="unverified">Awaiting verification</option>
+                            <option value="verified">Verified</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
+                    </div>
+
+                    <div id="residentManagementMessage"
+                        class="resident-management-message"
+                        role="status" aria-live="polite"></div>
+
+                    <div class="resident-management-summary">
+                        <article>
+                            <span>Total residents</span>
+                            <strong id="residentTotalCount">—</strong>
+                        </article>
+
+                        <article>
+                            <span>Awaiting verification</span>
+                            <strong id="residentPendingCount">—</strong>
+                        </article>
+
+                        <article>
+                            <span>Verified</span>
+                            <strong id="residentVerifiedCount">—</strong>
+                        </article>
+
+                        <article>
+                            <span>Rejected</span>
+                            <strong id="residentRejectedCount">—</strong>
+                        </article>
+                    </div>
+
+                    <div class="resident-table-wrapper">
+                        <table class="resident-table">
+                            <thead>
+                                <tr>
+                                    <th>Resident</th>
+                                    <th>Mobile</th>
+                                    <th>Village</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="residentManagementList">
+                                <tr>
+                                    <td colspan="5">Loading residents...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+                <!-- RESIDENT DETAILS MODAL -->
+                <div id="residentDetailsModal" class="backdrop" aria-hidden="true">
+
+                    <section class="modal resident-details-modal"
+                        role="dialog" aria-modal="true"
+                        aria-labelledby="residentDetailsTitle">
+
+                        <button type="button" class="close"
+                            id="closeResidentDetails" aria-label="Close">×</button>
+
+                        <span class="eyebrow">RESIDENT VERIFICATION</span>
+
+                        <h2 id="residentDetailsTitle">Resident Details</h2>
+
+                        <div id="residentDetailsContent"></div>
+
+                        <div class="resident-document-preview">
+                            <h3>Verification Document</h3>
+                            <div id="residentDocumentPreview">
+                                Select a resident to view their document.
+                            </div>
+                        </div>
+
+                        <div id="residentReviewControls" class="resident-review-controls">
+
+                            <textarea id="residentReviewNote" rows="3"
+                                placeholder="Optional review note..."></textarea>
+
+                            <div>
+                                <button type="button" class="btn outline"
+                                    id="rejectResident">Reject</button>
+
+                                <button type="button" class="btn primary"
+                                    id="verifyResident">Verify Resident</button>
+                            </div>
+
+                        </div>
+
+                        <div id="residentReviewMessage"
+                            class="resident-management-message"
+                            role="status" aria-live="polite"></div>
+
+                    </section>
+                </div>
+
+                <div class="official-workspace-grid">
+                    <article class="official-work-card"><span class="eyebrow">YOUR RESPONSIBILITIES</span>
+                        <h3 id="officialTasksTitle">Workspace tasks</h3>
+                        <ul id="officialTaskList">
+                            <li>Loading role permissions…</li>
+                        </ul>
+                    </article>
+                    <article class="official-work-card"><span class="eyebrow">DATA ACCESS</span>
+                        <h3>Jurisdiction summary</h3>
+                        <p id="officialAccessNote">Your dashboard is limited to the area assigned to your account.</p>
+                        <div id="officialAreaList" class="official-area-list"></div>
+                    </article>
+                </div>
+
+                <section id="siteMediaManager" class="site-media-manager hidden">
+                    <div class="media-manager-heading">
+                        <div><span class="eyebrow">VPI ADMINISTRATOR</span>
+                            <h2>Website photo manager</h2>
+                            <p>Manage public photos for Dooars Kanya, the Chief Minister feature, team profiles and
+                                gallery.</p>
+                        </div>
+                    </div>
+                    <form id="siteMediaForm" class="media-admin-form">
+                        <div class="form-grid">
+                            <label>Photo category
+                                <select id="mediaCategory" required>
+                                    <option value="dooars_kanya">Dooars Kanya</option>
+                                    <option value="chief_minister">Chief Minister</option>
+                                    <option value="team">Team member</option>
+                                    <option value="gallery">Gallery</option>
+                                </select>
+                            </label>
+                            <label>Title / person name<input id="mediaTitle" maxlength="120" required
+                                    placeholder="Enter a title"></label>
+                            <label>Alternative text<input id="mediaAlt" maxlength="240"
+                                    placeholder="Describe the image"></label>
+                            <label>Display order<input id="mediaOrder" type="number" min="0" max="9999"
+                                    value="0"></label>
+                            <label class="wide">Choose image<input id="mediaFile" type="file"
+                                    accept="image/jpeg,image/png,image/webp" required></label>
+                            <label class="media-active-toggle"><input id="mediaActive" type="checkbox" checked> Show
+                                publicly</label>
+                        </div>
+                        <button class="btn primary" type="submit" id="mediaSaveButton">Upload photo</button>
+                        <p id="mediaAdminMessage" class="media-admin-message" role="status"></p>
+                    </form>
+                    <div class="media-admin-list-wrap">
+                        <h3>Uploaded photos</h3>
+                        <div id="siteMediaAdminList" class="site-media-admin-list">Loading media…</div>
+                    </div>
+                </section>
+                <p class="official-dashboard-note" id="officialDashboardNote">Figures are loaded from the GramSathi
+                    database. Access is also enforced by Supabase Row Level Security.</p>
+            </section>
+
+            <p class="dashboard-footer-note" id="dashboardFooterNote">Your access is based on the role assigned to your
+                GramSathi profile.</p>
+        </main>
+    </section>
+
+    <!-- =========================================
+         8. AUTHENTICATION MODAL
+    ========================================== -->
+    <div class="backdrop" id="authModal" aria-hidden="true">
+
+        <section class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+
+            <!-- Modal Close Button -->
+            <button class="close" id="closeAuth" aria-label="Close">
+                ×
+            </button>
+
+            <!-- Modal Header -->
+            <div class="modal-title">
+                <span class="brand-mark">V</span>
+
+                <div>
+                    <span class="eyebrow">WELCOME TO VPI</span>
+                    <h2 id="authTitle">Your community starts here.</h2>
+                </div>
+            </div>
+
+            <!-- =====================================
+                 8.1 USER TYPE TABS
+            ====================================== -->
+            <div class="tabs">
+                <button class="tab active" data-tab="resident">Resident</button>
+                <button class="tab" data-tab="official">Official</button>
+            </div>
+
+
+            <!-- =====================================
+                 8.2 RESIDENT AUTHENTICATION
+            ====================================== -->
+            <div id="residentPanel">
+                <div class="form" id="residentGoogleLogin">
+                    <button class="btn google-btn full" type="button" id="googleLogin">
+                        <span class="google-mark" aria-hidden="true">G</span>
+                        Continue with Google
+                    </button>
+                    <p class="hint">New residents can sign up with Google. Returning residents can log in with the same
+                        Google account.</p>
+                </div>
+            </div>
+
+            <!-- =====================================
+                 8.3 OFFICIAL AUTHENTICATION
+            ====================================== -->
+            <div id="officialPanel" class="hidden">
+
+                <!-- Official Access Notice -->
+                <div class="notice">
+                    <b>Authorised accounts only</b>
+                    <span>
+                        Official access is limited to accounts provisioned and verified by VPI administration.
+                    </span>
+                </div>
+
+                <!-- Official Login Form -->
+                <form id="officialLoginForm" class="form">
+
+                    <label>
+                        Official role
+                        <select id="officialRole" required>
+                            <option value="">Select your role</option>
+                            <option value="gp_pradhan">Gram Panchayat Pradhan</option>
+                            <option value="gp_executive_assistant">Gram Panchayat Executive Assistant</option>
+                            <option value="bdo">Block Development Officer (BDO)</option>
+                            <option value="district_officer">District Officer</option>
+                            <option value="vpi_admin">VPI Administrator</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Email address
+                        <input id="officialEmail" type="email" required placeholder="Official email address">
+                    </label>
+
+                    <label>
+                        Password
+                        <input id="officialPassword" type="password" required placeholder="Enter your password">
+                    </label>
+
+                    <button class="btn primary full" type="submit">
+                        Login to official account
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Authentication Status Message -->
+            <div id="authMessage" class="message" role="status" aria-live="polite"></div>
+
+            <!-- Modal Footer -->
+            <p class="footnote">
+                Please use accurate information and access the platform responsibly.
+            </p>
+
+        </section>
+    </div>
+
+
+    <!-- =========================================
+         9. JAVASCRIPT APPLICATION LOGIC
+         Supabase Authentication & UI Interactions
+    ========================================== -->
+    <script src="js/app.js" defer></script>
+
+
+</body>
+
+</html>
